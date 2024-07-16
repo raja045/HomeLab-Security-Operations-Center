@@ -9,6 +9,14 @@
 The Homelab Security Operations Center (HSOC) is a comprehensive, virtualized environment designed for learning, testing, and practising cybersecurity operations. This lab integrates various security tools, network components, and operating systems to simulate a real-world security operations center (SOC). It aims to provide hands-on experience in network defense, incident response, and system administration.
 
 ## Components
+- Firewall: OPNsense
+- VPN: wireguard
+- Virtual Server : Windows, Ubuntu and DNS Server.
+- Virtual Clients
+- Attacker Machine: Kali Linux
+- SIEM : Wazuh
+
+## Detailed Configuration and Usage listed Below:
 
 ## **1. OPNsense Firewall**
 **Purpose**: Acts as the primary firewall and router, managing network traffic and providing security features such as NAT, VPN, and IDS/IPS.
@@ -89,6 +97,9 @@ The Homelab Security Operations Center (HSOC) is a comprehensive, virtualized en
 
 ## Detailed Configuration Steps
 
+### Network Configuration
+- Created separate subnets using VLAN for each departments or teams.
+  
 ### OPNsense Firewall
 1. **Installation**: Download and install OPNsense on a dedicated VM.
 2. **Network Segmentation**: Create network interfaces and VLANs for different segments.
